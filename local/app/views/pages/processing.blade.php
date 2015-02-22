@@ -1,7 +1,7 @@
 <?php
 $sum = (float)0;
 ?>
-hello
+
 @foreach ($products as $product)
 <div class="row">
     <div class="col-md-6"><h4>{{ $product['title'] }}</h4></div>
