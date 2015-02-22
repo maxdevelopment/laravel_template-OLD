@@ -15,12 +15,12 @@
         {{ HTML::style('local/app/css/admin.css') }}
         
         {{ HTML::script('local/app/js/main.js') }}
-        <title>Laravel Demo [MaxDevelopment]</title>
+        <title>Laravel Shop Template[MaxDevelopment]</title>
     </head>
     <body>
         <div class="container">
             <div class="masthead">
-                <h3 class="text-muted">Laravel Project</h3>
+                <h3 class="text-muted">Laravel Shop Template</h3>
                     <nav>
                         <ul class="nav nav-justified">
                             @include('pages.menu')
@@ -31,7 +31,16 @@
                 <div class="col-md-9 col-md-push-3">
                     <div class="row">
                         @section('content')
-                        TEST Content
+                        <dl>
+                            <dt>Admin:</dt>
+                            <dd>login: admin password: a111111</dd>
+                            <dt>Demo users:</dt>
+                            <dd>login: user1 password: a111111</dd>
+                            <dd>login: user2 password: a111111</dd>
+                            <dd>login: user3 password: a111111</dd>
+                            <dt>Git:</dt>
+                            <dd>https://github.com/maxdevelopment/laravel_template</dd>
+                        </dl>
                         @show
                     </div>
                 </div>
@@ -70,7 +79,6 @@
                         </div>
                     </div>
                 </div>
-                
             </div>
         </div>
         <div class="loader"></div>
