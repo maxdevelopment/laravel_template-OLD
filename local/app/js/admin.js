@@ -43,7 +43,7 @@ function AddProduct() {
 
 function DeleteProduct(id) {
     if(confirm('Are you sure?')) {
-        data = {
+        var data = {
             id: id
         };
         $.ajax({
@@ -58,7 +58,7 @@ function DeleteProduct(id) {
 }
 
 function MakeActive(id) {
-    data = {
+    var data = {
         id: id
     };
     $.ajax({
@@ -78,7 +78,7 @@ function MakeActive(id) {
 }
 
 function EditProduct(id) {
-    data = {
+    var data = {
         id: id
     };
     if($("span." + id + " div.edit_place").is(":empty")) {

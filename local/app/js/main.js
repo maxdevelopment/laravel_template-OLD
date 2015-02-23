@@ -28,7 +28,7 @@ function AlertMsg(type, msg) {
 }
 
 function AddToCart(id) {
-    data = $(".addtocart_" + id).serialize();
+    var data = $(".addtocart_" + id).serialize();
     $.ajax({
         url: "addtocart",
         data: data,
@@ -50,7 +50,7 @@ function AddToCart(id) {
 }
 
 function AddAddress() {
-    data = $(".formaddaddress").serialize();
+    var data = $(".formaddaddress").serialize();
     $.ajax({
         url: "addaddress",
         data: data,
@@ -81,7 +81,7 @@ function ViewCart() {
 }
 
 function ChangeCounter(id, del) {
-    data = $(".changecounter_" + id).serializeArray();
+    var data = $(".changecounter_" + id).serializeArray();
     del = del || 0;
     if (del !== 0) {
         if(confirm('Are you sure?')) {
@@ -142,7 +142,7 @@ function ViewAddressForm() {
 
 function UpdateDeleteAddressForm(id, del) {
     del = del || 0;
-    data = {
+    var data = {
         del: del,
         id: id
     };
